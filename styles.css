@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/img/back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: Bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+span{
+    background: #b84a18;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+}
+
+.but{
+    margin: 15rem;
+}
+
+#imgsl{
+    width: 35rem;
+    height: 20rem;
+    margin-left: 5rem;
+    border: black; 
+    border-radius: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    /* styles for screens smaller than 600px */
+    body{
+        width: 100%;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar ul {
+        display: flex;
+    }
+    .navbar img {
+        width: 120px;
+        cursor: pointer;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .img{
+        align-items: center;
+    }
+    .img #imgsl {
+        width: 20rem;
+        height: auto;
+        margin: 3rem;
+        border: black;
+        margin-top: 5rem;
+        position: relative;
+        border-radius: 5rem;
+    }
+    .img .but {
+        position: absolute;
+        left: 0; /* Puts the button at the left, you can also use right if you want */
+        margin-left: 30%;
+    }
+}

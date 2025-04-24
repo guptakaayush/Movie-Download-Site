@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Vikram Vedha</h1>
+            <br>
+            <img src="/img/vikram-vedha.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                Vikram Vedha is a 2022 Indian Hindi-language neo-noir action thriller film written and directed by Pushkar–Gayathri and jointly produced by S. Sashikanth under YNOT Studios, Jio Studios, Theme Studios, Bhushan Kumar and Krishan Kumar under T-Series Films, Friday Filmworks, and Reliance Entertainment. A remake of the duo's 2017 film of the same name, adapted in translation by writers B.A. Fida and Manoj Muntashir, the latter also serving as lyricist, it is inspired by the Indian folktale Baital Pachisi and stars Hrithik Roshan and Saif Ali Khan in title roles with Radhika Apte, Rohit Saraf and Yogita Bihani in supporting roles, and tells the story of a police officer who sets out to track down and kill a dreaded gangster.<br>
+                <br>
+                Production began in October 2021 and was wrapped up in June 2022, with Friday Filmworks founder Neeraj Pandey serving as creative producer. The film was theatrically released worldwide on 30 September 2022 and received positive reviews from critics, but underperformed at the box office.<br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download Vikram Vedha in Hindi</h3>
+                <a href="https://vnshortener.com/11w5cGs"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

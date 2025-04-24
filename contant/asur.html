@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Asur</h1>
+            <br>
+            <img src="/img/asur.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                <br>
+                Asur is an Indian Hindi-language psychological thriller web series. The first season was produced by Tanveer Bookwala and aired on Voot while the second season, produced by Bombay Fables, Sejal Shah, Bhavesh Mandalia, and Gaurav Shukla aired on JioCinema. The first season premiered on 2 March 2020 and the second season on 1 June 2023.<br>
+                <br>
+
+                The series is about a team of forensic experts who must catch a serial killer who considers himself a reincarnation of the asura Kali. Arshad Warsi and Barun Sobti star, alongside Anupriya Goenka, Ridhi Dogra, and Amey Wagh. Sharib Hashmi had a starring role in the first season, while Meiyang Chang and Abhishek Chauhan joined the main cast in the second season.<br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download Asur Season 1</h3>
+                <a href="https://drive.google.com/drive/folders/1TetWWYmUtReI3gtLCsqAjKHIbnsO1BoQ?usp=sharing"><button type="_blank_" target="_blank"><span></span>Download</button></a>
+                <hr>
+                <br>
+                <h3>Download Asur Season 2</h3>
+                <a href="https://drive.google.com/drive/folders/18rsIEr8OUzx0a77FW3BDpsUjNoAmAtbc?usp=sharing"><button type="_blank_" target="_blank"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+window.onload = function() {
+   if (!getCookie('visited')) {
+      location.reload();
+      document.cookie = "visited=true";
+   }
+}
+
+function getCookie(cname) {
+   var name = cname + "=";
+   var decodedCookie = decodeURIComponent(document.cookie);
+   var ca = decodedCookie.split(';');
+   for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+         c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+         return c.substring(name.length, c.length);
+      }
+   }
+   return "";
+}
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>War</h1>
+            <br>
+            <img src="/img/war.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                War is a 2019 Indian Hindi-language spy action-thriller film directed by Siddharth Anand, who co-wrote the film's script with Aditya Chopra, Shridhar Raghavan and Abbas Tyrewala. The film was produced by Aditya Chopra for Yash Raj Films. It is the third installment in the YRF Spy Universe and stars Hrithik Roshan, Tiger Shroff, and Vaani Kapoor. In the film, Khalid Rahmani (Shroff), an Indian soldier who works for RAW, is assigned to eliminate his former mentor Kabir Dhaliwal (Roshan), who has inexplicably gone rogue.<br>
+                <br>
+                Tentatively titled Fighters, the film's name was revealed on the release of the teaser trailer.<br>
+                <br>
+                War opened worldwide on 2 October 2019 on Gandhi Jayanti 5-day extended weekend. Released simultaneously with its Tamil and Telugu dubbed versions, it received generally positive reviews, with praise for Shroff and Roshan performance, action sequences, visual effects, musical score and direction. The film was a commercial success grossing over ₹475 crore (US$59 million), becoming the highest-grossing Indian film of 2019 and one of the highest-grossing Indian film of all time.<br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download War in Hindi</h3>
+                <a href="https://vnshortener.com/Xi8Jm"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

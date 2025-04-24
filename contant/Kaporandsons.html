@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Kapoor And Sons</h1>
+            <br>
+            <img src="/img/kapoor and sons.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                Kapoor & Sons, also known as Kapoor & Sons (Since 1921), is a 2016 Indian Hindi-language comedy-drama film directed by Shakun Batra and produced by Hiroo Yash Johar, Karan Johar and Apoorva Mehta under Dharma Productions, with Fox Star Studios serving as distributor and co-producer. Exploring themes of a dysfunctional family, the film stars Rishi Kapoor, Ratna Pathak Shah, Rajat Kapoor, Fawad Khan, Sidharth Malhotra and Alia Bhatt. Marking the second collaboration between Malhotra and Bhatt after their debut together in Student of the Year (2012), the film follows two estranged brothers who return to their dysfunctional family after their grandfather suffers a cardiac arrest.<br>
+                <br>
+                Made on a budget of ₹28 crore, Kapoor & Sons released in cinemas on 18 March 2016 and earned ₹148 crore worldwide, and was declared a blockbuster at the box office. It received high critical acclaim for its direction, story, screenplay, music and performances of the cast.<br>
+                <br>
+                At the 62nd Filmfare Awards, Kapoor & Sons received 8 nominations, including Best Film, Best Director (Batra) and Best Supporting Actress (Pathak Shah), and won 5 awards with Rishi Kapoor winning Best Supporting Actor over his co-stars and fellow nominees Khan and Rajat Kapoor.[7] The film is available on Netflix and Amazon Prime Video.<br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download Kapoor And Sons in Hindi</h3>
+                <a href="https://vnshortener.com/BvH3Nm"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

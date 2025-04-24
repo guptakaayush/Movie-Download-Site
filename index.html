@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch Hindi and Indian movies in HD online. Stream and download HD quality popular and hit movies in Hindi.">
+    <meta name="keywords" content="gsmov, Gsmov">
+    <meta name="author" content="gsmov">
+    <link rel="stylesheet" href="styles.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="img">
+            <div class="mySlides fade">               
+                <img src="/img/scale.jpg" alt="Mountain" id="imgsl">             
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/thankgod.jpg" alt="Pashupatinath" id="imgsl">                
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/runway-34.jpg" alt="Janaki" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/Drishyam-2.jpg" alt="Janaki" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/God-Father.jpg" alt="image" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/kapoor and sons.jpg" alt="image" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/vikram-vedha.jpg" alt="image" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/uchai.jpg" alt="image" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/bedhya.jpg" alt="image" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/Annebella2.jpg" alt="image" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/Stand-by-me-doremon-2 - Copy.jpg" alt="image" id="imgsl">               
+            </div>
+            <div class="mySlides fade">              
+                <img src="/img/KGF-2.jpg" alt="image" id="imgsl">               
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+
+            </div>
+
+            <div>
+                <a href="/movies.html"><button class="but" type="button"><span></span>Movies</button></a>
+            </div>
+
+        </div>
+    </div>
+  </body>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+<script>
+window.onload = function() {
+   if (!getCookie('visited')) {
+      location.reload();
+      document.cookie = "visited=true";
+   }
+}
+
+function getCookie(cname) {
+   var name = cname + "=";
+   var decodedCookie = decodeURIComponent(document.cookie);
+   var ca = decodedCookie.split(';');
+   for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+         c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+         return c.substring(name.length, c.length);
+      }
+   }
+   return "";
+}
+</script>
+</html>

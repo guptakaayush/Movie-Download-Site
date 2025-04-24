@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Uchai</h1>
+            <br>
+            <img src="/img/uchai.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                Uunchai (transl. Altitude) is a 2022 Indian Hindi-language adventure drama film directed by Sooraj Barjatya, written by Abhishek Dixit on the basis of an original story by Sunil Gandhi, and produced jointly by Rajshri Productions, Boundless Media and Mahaveer Jain Films.[2] The 60th film produced by Rajshri, it stars an ensemble cast of Amitabh Bachchan, Anupam Kher, Boman Irani, Danny Denzongpa, Parineeti Chopra, Neena Gupta and Sarika.<br>
+                <br>
+                Uunchai was announced in October 2021. The principal photography commenced in October 2021 itself and ended in April 2022, followed by post-production works. The film's music is composed by Amit Trivedi.<br>
+                <br>
+                Uunchai was theatrically released on 11 November 2022, to positive reviews for its direction, cast performances, screenplay and cinematography but criticism for its excessive length.[8] The film earned ₹48.16 crore worldwide and was considered a box office success.[9] The film was digitally released on the OTT platform, ZEE5 on 6 January, 2023.<br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download Uchai in Hindi</h3>
+                <a href="https://vnshortener.com/E76pHI"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

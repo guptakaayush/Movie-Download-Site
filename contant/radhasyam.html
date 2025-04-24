@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Radhe Shyam</h1>
+            <br>
+            <img src="/img/radhasyam.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                Radhe Shyam is a 2022 Indian period romantic drama film written and directed by Radha Krishna Kumar. Produced by UV Creations and T-Series, the film was shot simultaneously in Telugu and Hindi languages and stars Prabhas and Pooja Hegde. It also features Bhagyashree, Sathyaraj, Jagapathi Babu, Krishnam Raju, Sachin Khedekar, Murali Sharma and Jayaram in supporting roles. Set in 1970s Italy, the film revolves around palmist Vikramaditya, who is conflicted between destiny and his love for Prerana.<br>
+                <br>
+                The film's score is composed by Thaman S for the Telugu version while Sanchit Balhara and Ankit Balhara too composed for the Hindi version. The film has two soundtracks: One Hindi and one Telugu. Mithoon, Amaal Mallik and Manan Bhardwaj composed the Hindi songs while Justin Prabhakaran composed the Telugu songs. The cinematography is handled by Manoj Paramahamsa and editing done by Kotagiri Venkateswara Rao. Principal photography of the film commenced in October 2018 and ended in July 2021, with filming taking place in Hyderabad, Italy and Georgia. The Telugu version featured veteran actor Krishnam Raju in his first film appearance since 2015 and also marked his final film appearance following his death on September 11, 2022 at the Asian Institute of Gastroenterology Hospitals in Hyderabad since being admitted on 5 August 2022 for post-COVID-19 issues.<br>
+                <br>
+                Originally planned for a release on 30 July 2021, it was delayed due to the COVID-19 pandemic. Radhe Shyam was theatrically released on 11 March 2022 and received mixed reviews from critics with praise aimed at the performances of Prabhas and Hegde, music, cinematography and production values but received criticism for its dialogues, screenplay, direction and narration. The film was a huge box office failure.<br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download Radhe Shyam in Hindi</h3>
+                <a href="https://clk.asia/u2TC"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

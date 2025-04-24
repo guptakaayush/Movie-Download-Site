@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>The Kashmir Files</h1>
+            <br>
+            <img src="/img/The_Kashmir_Files_poster.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                The Kashmir Files is a 2022 Indian Hindi-language drama film written and directed by Vivek Agnihotri. The film presents a fictional storyline centred around the 1990s exodus of Kashmiri Hindus from Indian-administered Kashmir. It depicts the exodus and the events leading up to it as a genocide, a notion that is widely considered inaccurate by scholars. The film claims that such facts were suppressed by a conspiracy of silence.<br>
+                <br>
+                The Kashmir Files stars Mithun Chakraborty, Anupam Kher, Darshan Kumar, and Pallavi Joshi. The plot follows a Kashmiri Hindu college student, raised by his exiled grandfather and shielded from the knowledge of the circumstances of the death of his parents. After his grandfather's death, the student, who had come to believe at college that the exodus was benign, becomes driven to uncover the facts of his family's deaths. The plot alternates between the student's quest in the present time, 2020, and his family's travails of thirty years before. The film was released in theatres on 11 March 2022. It has been a commercial success, seemingly benefitting from promotion by India's ruling Hindu nationalist Bharatiya Janata Party (BJP) and tax benefits.<br>
+                <br>
+                The critical reception of the film was mixed, with the cinematography and acting thought to be compelling, but the storyline attracting criticism for attempting to recast established history and propagating Islamophobia. Supporters have praised the film for showing what they say is an overlooked aspect of Kashmir's history. Indian Prime Minister Narendra Modi and several BJP ministers have praised the film. Theatres across India have witnessed hate speech against Muslims, including incitement to violence. As of 28 April 2022, the film, which cost approximately ₹15 crore (US$1.9 million) to ₹25 crore (US$3.1 million) to make, had grossed ₹340.92 crore (US$43 million) worldwide, becoming the third highest-grossing Hindi film of 2022.<br>
+                <br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download The Kashmir Files in Hindi</h3>
+                <a href="https://clk.asia/vk7m"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

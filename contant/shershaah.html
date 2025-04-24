@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Shershaah</h1>
+            <br>
+            <img src="/img/SHERSHAAH.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                Shershaah (transl. Lion king) is a 2021 Indian Hindi-language biographical war film based on the life of Vikram Batra, martyred in Kargil War, directed by Vishnuvardhan in his Hindi film debut and written by Sandeep Shrivastava. The film was produced by Dharma Productions and Kaash Entertainment, with Hiroo Yash Johar, Karan Johar, Apoorva Mehta, Shabbir Boxwala, Ajay Shah and Himanshu Gandhi serving as producers. Sidharth Malhotra stars in dual roles as Batra and his twin brother Vishal, with Kiara Advani as his girlfriend Dimple Cheema.<br>
+                <br>
+                Announced in May 2019, principal photography began in the same month and concluded in January 2020. Initially slated to be released on 3 July 2020, the film was postponed due to the COVID-19 pandemic. The film then premiered on 12 August 2021 on Amazon Prime Video.<br>
+                <br>
+                Shershaah received positive reviews from both the critics and audience, alike. The performances (especially Malhotra's and Advani's), direction, music, cinematography, action sequences, editing, and visual effects received high critical acclaim. However, the writing received some criticism.[5][6] On 31 August 2021, Amazon stated that Shershaah had become the most watched Indian film on the platform in India.<br>
+                <br>
+                Shershaah led the 67th Filmfare Awards with 19 nominations, including Best Actor (Malhotra) and Best Actress (Advani), and won 7 awards including Best Film, Best Director (Vishnuvardhan), Best Music Director (Tanishk Bagchi, B Praak, Jasleen Royal, Javed-Mohsin and Vikram Montrose), Best Male Playback Singer (Praak for "Mann Bharrya") and Best Female Playback Singer (Asees Kaur for "Raatan Lambiyaan").
+                <br>
+                <br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download Shershaah in Hindi</h3>
+                <a href="https://clk.asia/Rop8ass"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

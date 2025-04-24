@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/about.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <p>
+                Movie downloading websites are online platforms that allow users to download movies for personal use. These websites may offer a wide variety of movies, including the latest releases and older films. Some movie downloading websites are free to use while others require a subscription or payment to access their content.<br>
+                <br>
+                One popular movie downloading website is The Pirate Bay, which is a torrent website that allows users to download a wide variety of content, including movies. However, it is important to note that using torrent websites to download copyrighted content without permission is illegal in many countries and can put your computer at risk of malware or viruses.<br>
+                <br>
+                Another popular movie downloading website is YTS, which specializes in high-quality releases of movies in small file sizes. However, it is important to note that not all movie downloading websites are legitimate and safe to use. Some websites may contain malware or viruses, or may be scams intended to steal personal information.<br>
+                <br>
+                It's always best to use legal options to download movies. You can find many movie streaming websites like Netflix, Hulu, Disney+ that also allow downloading of certain content for offline viewing. You can also purchase or rent movies from online platforms such as Google Play, Amazon Prime Video, iTunes, Vudu, etc.<br>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>

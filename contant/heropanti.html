@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contant/main.css">
+    <script src='script.js'></script>
+    <title>Gup Movies</title>
+</head>
+<body>
+    <div class="Banner">
+        <div class="navbar">
+            <a href="/index.html"><img src="/img/gup-logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>Heropanti 2</h1>
+            <br>
+            <img src="/img/heropanti.jpg" alt="Thank God" id="emaz">
+            <br>
+            <p>
+                Heropanti 2 (transl. Heroic antics 2) is a 2022 Indian Hindi-language action film directed by Ahmed Khan, written by Rajat Arora and produced by Sajid Nadiadwala under the banner of Nadiadwala Grandson Entertainment. The film serves as a sequel to the 2014 film Heropanti. It stars Tiger Shroff, Nawazuddin Siddiqui and Tara Sutaria. It was released on 29 April 2022.<br>
+                <br>
+            </p>
+            <div class="but">
+                <br>
+                <br>
+                <h3>Download Heropanti 2 in Hindi</h3>
+                <a href="https://clk.asia/WSIFD"><button type="_blank_"><span></span>Download</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = function() {
+       if (!getCookie('visited')) {
+          location.reload();
+          document.cookie = "visited=true";
+       }
+    }
+    
+    function getCookie(cname) {
+       var name = cname + "=";
+       var decodedCookie = decodeURIComponent(document.cookie);
+       var ca = decodedCookie.split(';');
+       for(var i = 0; i <ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+             c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+             return c.substring(name.length, c.length);
+          }
+       }
+       return "";
+    }
+</script>
+</html>
